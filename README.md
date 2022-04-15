@@ -8,7 +8,8 @@ Deux classes suffisent:
 -une classe Tableau
 
 Le typage serait fait à l'intanciation de la classe Tableau<T>:
-  -une classe d'objet java: string, Integer
-  -ou Object
   
-Simple à utiliser !
+- une classe d'objet java: string, Integer
+- ou Object
+  
+Simple à utiliser !(cfs javadoc)
