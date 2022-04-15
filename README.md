@@ -19,7 +19,7 @@ Simple à utiliser !(cfs javadoc)
  ## le code de l'exemple 
  <code lang='java'>
    
-           //Test String
+         //Test String
         try {
             String str1="COUCOU";
             String str2="tintin";
@@ -30,8 +30,9 @@ Simple à utiliser !(cfs javadoc)
 
             tab.add(str1);
             afficherTableau("aps  1eradd : ",tab);
-            //tab.clear();
-            //afficherTableau("aps clear : ",tab);
+
+            tab.clear();
+            afficherTableau("aps clear : ",tab);
 
             tab.add(str2);
             afficherTableau("aps  add : ",tab);
