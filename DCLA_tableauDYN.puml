@@ -1,0 +1,28 @@
+@startuml
+package model.tableau{
+interface ItableauDynamique<T>{
+    + toArray(): T[]
+    + isEmpty(): boolean
+    + length(): int
+    + count(): int
+    + clear()
+    + remove(T obj)throws Exception
+    + add(T obj) throws Exception
+    + contains(T obj): boolean
+    + indexOf(T obj): int
+    + sort() throws Exception
+}
+
+class Tableau<T>{
+ - T[] tab;
+ ---
+ + Tableau()
+ + Tableau(T[] tab) throws Exception
+---
+ - void setTab( T[] tab ) throws Exception
+ - T[] recopierAgrandir(T[] t,int decalage)
+}
+
+ItableauDynamique<|..Tableau
+}
+@enduml
