@@ -56,4 +56,4 @@ Simple à utiliser !(cfs javadoc)
 ## résultat pour un tableau de chaîne:
   ![Capture écran 1](./Capture1_tableauString.PNG?raw=true "Capture d'écran")
 
-  
+ 
