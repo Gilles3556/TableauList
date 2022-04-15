@@ -16,11 +16,10 @@ Simple à utiliser !(cfs javadoc)
 
 #Exemples d'utilisation:
   
-  ##le code de l'exemple:
-  
-  <code lang='java'>
-    
-        //Test String
+ ## le code de l'exemple 
+ <code lang='java'>
+   
+           //Test String
         try {
             String str1="COUCOU";
             String str2="tintin";
@@ -31,7 +30,6 @@ Simple à utiliser !(cfs javadoc)
 
             tab.add(str1);
             afficherTableau("aps  1eradd : ",tab);
-           
             //tab.clear();
             //afficherTableau("aps clear : ",tab);
 
@@ -46,14 +44,15 @@ Simple à utiliser !(cfs javadoc)
 
             tab.remove(str3);
             afficherTableau("2] aps remove(): tableau d'objets",tab);
-            
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
   </code>
+ 
     
 ## résultat pour un tableau de chaîne:
   ![Capture écran 1](./Capture1_tableauString.PNG?raw=true "Capture d'écran")
- 
+
   
