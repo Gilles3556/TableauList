@@ -13,3 +13,8 @@ Le typage serait fait à l'intanciation de la classe Tableau<T>:
 - ou Object
   
 Simple à utiliser !(cfs javadoc)
+
+#Exemples d'utilisation:
+  
+## un tableau de chaîne:
+  ![Capture écran 1](./Capture1_tableauString.PNG?raw=true "Capture d'écran")
