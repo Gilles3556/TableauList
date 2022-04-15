@@ -153,9 +153,9 @@ public class Tableau<T> implements  ITableauDynamique<T>,Iterable<T>{
          if(Objects.isNull(obj)){
             throw new Exception("ERR sur add(): l'objet vaut NULL!");
         }
-        if(this.contains(obj)){
+        /*if(this.contains(obj)){
             throw new Exception("ERR sur add(): l'objet existe déjà!");
-        }
+        }*/
         if(Objects.isNull(tab)){
             tab = (T[]) new Object[1];
         }else{
@@ -209,15 +209,19 @@ public class Tableau<T> implements  ITableauDynamique<T>,Iterable<T>{
         sb1.append(System.lineSeparator());
 
         sb1.append(" [ ");
-        for (Object obj: tab ) {
-            if(Objects.nonNull(obj)) {
-                sb1.append(obj.toString()).append(" , ");
-            }else{
-                sb1.append("NULL , ");
+        String str="";
+        if (Objects.nonNull(tab)) {
+            for (Object obj: tab ) {
+                if(Objects.nonNull(obj)) {
+                    sb1.append(obj.toString()).append(" , ");
+                }else{
+                    sb1.append("NULL , ");
+                }
             }
+            str=  sb1.substring(0,sb1.toString().length()-3);
+        }else{
+            str=" [ vide";
         }
-        String str = sb1.substring(0,sb1.toString().length()-3);
-
         StringBuilder sb = new StringBuilder(str);
         sb.append(" ]");
         sb.append(System.lineSeparator());
